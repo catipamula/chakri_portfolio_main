@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Grid layout for thumbnails */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* College Thumbnail Card */
+.college {
+    width: 200px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.college:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.college img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: filter 0.3s;
+}
+
+/* Image Hover Effect */
+.college img:hover {
+    filter: brightness(0.8) saturate(1.2);
+}
+
+/* Fullscreen Gallery */
+.gallery {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Gallery Images */
+.gallery .images {
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual Image */
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.close:hover {
+    transform: rotate(90deg);
+}
+
+/* Lightbox for full-screen image view */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    margin: auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Slideshow Controls */
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* logo */
+.logo {
+    position: absolute;
+    top: 20px;  /* Adjust as needed */
+    left: 20px; /* Aligns it to the left */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;  /* Adjust color as needed */
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #007bff;  /* Change color on hover */
+}
+
+/* Font */
+.ibm-plex-serif-regular {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
