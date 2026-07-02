@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Workshops and Hackathons photo gallery">
+    <title>Workshops - Hackathons Gallery</title>
+    <link rel="stylesheet" href="./gallery.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="logo">
+            <a href="./index.html">Home</a>
+        </div>
+        <h1>Workshops - Hackathons</h1>
+    </header>
+
+    <main class="gallery-container">
+        <article class="college" onclick="showGallery('college1')" role="button" tabindex="0" aria-label="Open St.Marys BootCamp gallery">
+            <img src="./assets/blog/stmarys_logo.jpg" alt="St.Marys group of institutions logo" loading="lazy">
+            <p>St.Marys group of institutions Guntur BootCamp</p>
+        </article>
+        <article class="college" onclick="showGallery('college2')" role="button" tabindex="0" aria-label="Open Loyola JFS Bootcamp gallery">
+            <img src="./assets/blog/JFS_loyala/litam.jpeg" alt="Loyola Institute logo" loading="lazy">
+            <p>Loyola Institute of Technology And Management JFS-Bootcamp</p>
+        </article>
+        <article class="college" onclick="showGallery('college5')" role="button" tabindex="0" aria-label="Open Sacet Gen-Ai bootcamp gallery">
+            <img src="./assets/blog/GenAi bootcamp5/sacet.jpg" alt="Sacet Gen-Ai bootcamp logo" loading="lazy">
+            <p>Sacet chirala - GenAi bootcamp</p>
+        </article>
+        <article class="college" onclick="showGallery('college3')" role="button" tabindex="0" aria-label="Open Rkcollege PFS Bootcamp gallery">
+            <img src="./assets/blog/Rkclg3/Rk.jpg" alt="Rkcollege logo" loading="lazy">
+            <p>Rkcollege PFS-Bootcamp</p>
+        </article>
+        <article class="college" onclick="showGallery('college4')" role="button" tabindex="0" aria-label="Open Litam PFS Bootcamp gallery">
+            <img src="./assets/blog/PFS4/litam.jpeg" alt="Litam college logo" loading="lazy">
+            <p>Litam college PFS-Bootcamp</p>
+        </article>
+        <article class="college" onclick="showGallery('college6')" role="button" tabindex="0" aria-label="Open St.Marys Hackathon gallery">
+            <img src="./assets/blog/stmarys_logo.jpg" alt="St.Marys Hackathon logo" loading="lazy">
+            <p>St.Marys group of institutions<br>Guntur-Hackathon</p>
+        </article>
+        <article class="college" onclick="showGallery('college7')" role="button" tabindex="0" aria-label="Open Eswar college Hackathon gallery">
+            <img src="./assets/blog/eswarclg/eswarlogo.png" alt="Eswar college logo" loading="lazy">
+            <p>Eswar college Web-development-Hackathon</p>
+        </article>
+        <article class="college" onclick="showGallery('college8')" role="button" tabindex="0" aria-label="Open Litam Web-development Hackathon gallery">
+            <img src="./assets/blog/PFS4/litam.jpeg" alt="Litam Web-development logo" loading="lazy">
+            <p>Litam college Web-development-Hackathon</p>
+        </article>
+    </main>
+
+    <div id="college1" class="gallery" aria-hidden="true" role="dialog" aria-label="St.Marys BootCamp gallery">
+        <button type="button" class="close" onclick="closeGallery('college1')" aria-label="Close gallery">&times;</button>
+        <div class="images">
+            <img src="./assets/blog/stmarys/1.jpg" alt="St.Marys BootCamp photo 1" onclick="openLightbox(this.src, 'college1')">
+            <img src="./assets/blog/stmarys/2.jpg" alt="St.Marys BootCamp photo 2" onclick="openLightbox(this.src, 'college1')">
+            <img src="./assets/blog/stmarys/3 (1).jpg" alt="St.Marys BootCamp photo 3" onclick="openLightbox(this.src, 'college1')">
+            <img src="./assets/blog/stmarys/3 (2).jpg" alt="St.Marys BootCamp photo 4" onclick="openLightbox(this.src, 'college1')">
+            <img src="./assets/blog/stmarys/4 (1).jpg" alt="St.Marys BootCamp photo 5" onclick="openLightbox(this.src, 'college1')">
+            <img src="./assets/blog/stmarys/4 (2).jpg" alt="St.Marys BootCamp photo 6" onclick="openLightbox(this.src, 'college1')">
+            <img src="./assets/blog/stmarys/5 (1).jpg" alt="St.Marys BootCamp photo 7" onclick="openLightbox(this.src, 'college1')">
+            <img src="./assets/blog/stmarys/5 (2).jpg" alt="St.Marys BootCamp photo 8" onclick="openLightbox(this.src, 'college1')">
+            <img src="./assets/blog/stmarys/6.jpg" alt="St.Marys BootCamp photo 9" onclick="openLightbox(this.src, 'college1')">
+        </div>
+    </div>
+
+    <div id="college2" class="gallery" aria-hidden="true" role="dialog" aria-label="Loyola JFS Bootcamp gallery">
+        <button type="button" class="close" onclick="closeGallery('college2')" aria-label="Close gallery">&times;</button>
+        <div class="images">
+            <img src="./assets/blog/JFS_loyala/1.jpg" alt="Loyola JFS photo 1" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/2 (1).jpg" alt="Loyola JFS photo 2" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/2 (2).jpg" alt="Loyola JFS photo 3" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/3 (1).jpg" alt="Loyola JFS photo 4" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/3 (2).jpg" alt="Loyola JFS photo 5" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/4 (1).jpg" alt="Loyola JFS photo 6" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/4 (2).jpg" alt="Loyola JFS photo 7" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/5 (1).jpg" alt="Loyola JFS photo 8" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/5 (2).jpg" alt="Loyola JFS photo 9" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/5 (3).jpg" alt="Loyola JFS photo 10" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/6 (1).jpg" alt="Loyola JFS photo 11" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/6 (2).jpg" alt="Loyola JFS photo 12" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/6 (3).jpg" alt="Loyola JFS photo 13" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/6 (4).jpg" alt="Loyola JFS photo 14" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/6 (5).jpg" alt="Loyola JFS photo 15" onclick="openLightbox(this.src, 'college2')">
+            <img src="./assets/blog/JFS_loyala/6 (6).jpg" alt="Loyola JFS photo 16" onclick="openLightbox(this.src, 'college2')">
+        </div>
+    </div>
+
+    <div id="college3" class="gallery" aria-hidden="true" role="dialog" aria-label="Rkcollege PFS Bootcamp gallery">
+        <button type="button" class="close" onclick="closeGallery('college3')" aria-label="Close gallery">&times;</button>
+        <div class="images">
+            <img src="./assets/blog/Rkclg3/1.jpg" alt="Rkcollege photo 1" onclick="openLightbox(this.src, 'college3')">
+            <img src="./assets/blog/Rkclg3/2.jpg" alt="Rkcollege photo 2" onclick="openLightbox(this.src, 'college3')">
+            <img src="./assets/blog/Rkclg3/3.jpg" alt="Rkcollege photo 3" onclick="openLightbox(this.src, 'college3')">
+        </div>
+    </div>
+
+    <div id="college5" class="gallery" aria-hidden="true" role="dialog" aria-label="Sacet Gen-Ai bootcamp gallery">
+        <button type="button" class="close" onclick="closeGallery('college5')" aria-label="Close gallery">&times;</button>
+        <div class="images">
+            <img src="./assets/blog/GenAi bootcamp5/1.jpg" alt="Gen-Ai bootcamp photo 1" onclick="openLightbox(this.src, 'college5')">
+            <img src="./assets/blog/GenAi bootcamp5/2.jpg" alt="Gen-Ai bootcamp photo 2" onclick="openLightbox(this.src, 'college5')">
+            <img src="./assets/blog/GenAi bootcamp5/3.jpg" alt="Gen-Ai bootcamp photo 3" onclick="openLightbox(this.src, 'college5')">
+            <img src="./assets/blog/GenAi bootcamp5/4.jpg" alt="Gen-Ai bootcamp photo 4" onclick="openLightbox(this.src, 'college5')">
+            <img src="./assets/blog/GenAi bootcamp5/5.jpg" alt="Gen-Ai bootcamp photo 5" onclick="openLightbox(this.src, 'college5')">
+        </div>
+    </div>
+
+    <div id="college4" class="gallery" aria-hidden="true" role="dialog" aria-label="Litam PFS Bootcamp gallery">
+        <button type="button" class="close" onclick="closeGallery('college4')" aria-label="Close gallery">&times;</button>
+        <div class="images">
+            <img src="./assets/blog/PFS4/1 (1).jpg" alt="Litam PFS photo 1" onclick="openLightbox(this.src, 'college4')">
+            <img src="./assets/blog/PFS4/1 (2).jpg" alt="Litam PFS photo 2" onclick="openLightbox(this.src, 'college4')">
+            <img src="./assets/blog/PFS4/1 (3).jpg" alt="Litam PFS photo 3" onclick="openLightbox(this.src, 'college4')">
+            <img src="./assets/blog/PFS4/1 (4).jpg" alt="Litam PFS photo 4" onclick="openLightbox(this.src, 'college4')">
+        </div>
+    </div>
+
+    <div id="college6" class="gallery" aria-hidden="true" role="dialog" aria-label="St.Marys Hackathon gallery">
+        <button type="button" class="close" onclick="closeGallery('college6')" aria-label="Close gallery">&times;</button>
+        <div class="images">
+            <img src="./assets/blog/st_marys_Hackathon6/1 (1).jpg" alt="St.Marys Hackathon photo 1" onclick="openLightbox(this.src, 'college6')">
+            <img src="./assets/blog/st_marys_Hackathon6/1 (2).jpg" alt="St.Marys Hackathon photo 2" onclick="openLightbox(this.src, 'college6')">
+            <img src="./assets/blog/st_marys_Hackathon6/2 (1).jpg" alt="St.Marys Hackathon photo 3" onclick="openLightbox(this.src, 'college6')">
+            <img src="./assets/blog/st_marys_Hackathon6/3.jpg" alt="St.Marys Hackathon photo 4" onclick="openLightbox(this.src, 'college6')">
+        </div>
+    </div>
+
+    <div id="college7" class="gallery" aria-hidden="true" role="dialog" aria-label="Eswar college Hackathon gallery">
+        <button type="button" class="close" onclick="closeGallery('college7')" aria-label="Close gallery">&times;</button>
+        <div class="images">
+            <img src="./assets/blog/eswarclg/1.jpg" alt="Eswar college photo 1" onclick="openLightbox(this.src, 'college7')">
+            <img src="./assets/blog/eswarclg/2.jpg" alt="Eswar college photo 2" onclick="openLightbox(this.src, 'college7')">
+            <img src="./assets/blog/eswarclg/3.jpg" alt="Eswar college photo 3" onclick="openLightbox(this.src, 'college7')">
+            <img src="./assets/blog/eswarclg/4.jpg" alt="Eswar college photo 4" onclick="openLightbox(this.src, 'college7')">
+            <img src="./assets/blog/eswarclg/5.jpg" alt="Eswar college photo 5" onclick="openLightbox(this.src, 'college7')">
+        </div>
+    </div>
+
+    <div id="college8" class="gallery" aria-hidden="true" role="dialog" aria-label="Litam Web-development Hackathon gallery">
+        <button type="button" class="close" onclick="closeGallery('college8')" aria-label="Close gallery">&times;</button>
+        <div class="images">
+            <img src="./assets/blog/lithamWD/1.jpg" alt="Litam Web-development photo 1" onclick="openLightbox(this.src, 'college8')">
+            <img src="./assets/blog/lithamWD/2.jpg" alt="Litam Web-development photo 2" onclick="openLightbox(this.src, 'college8')">
+            <img src="./assets/blog/lithamWD/3.jpg" alt="Litam Web-development photo 3" onclick="openLightbox(this.src, 'college8')">
+            <img src="./assets/blog/lithamWD/4.jpg" alt="Litam Web-development photo 4" onclick="openLightbox(this.src, 'college8')">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview">
+        <div class="lightbox-backdrop"></div>
+        <button type="button" class="lightbox-close close" onclick="closeLightbox()" aria-label="Close preview">&times;</button>
+        <button type="button" class="prev" onclick="prevImage()" aria-label="Previous image">&#10094;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+        <button type="button" class="next" onclick="nextImage()" aria-label="Next image">&#10095;</button>
+        <div class="lightbox-toolbar" role="toolbar" aria-label="Image controls">
+            <button type="button" onclick="zoomOut()" aria-label="Zoom out">−</button>
+            <button type="button" onclick="fitScreen()" aria-label="Fit to screen">Fit</button>
+            <button type="button" onclick="zoomIn()" aria-label="Zoom in">+</button>
+        </div>
+        <div class="lightbox-meta">
+            <span id="lightbox-counter" aria-live="polite">1 / 1</span>
+            <span id="lightbox-filename"></span>
+        </div>
+    </div>
+
+    <script src="./gallery.js" defer></script>
+</body>
+</html>
