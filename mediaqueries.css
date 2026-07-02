@@ -1,4 +1,13 @@
 /* Large Screens (Desktops & Laptops) */
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 1600px) {
+  section {
+    margin: 0 clamp(2rem, 5vw, 10rem);
+  }
+}
+
+>>>>>>> 27a2b6f (Updated portfolio with new features and bug fixes)
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -13,7 +22,10 @@
   }
 }
 
+<<<<<<< HEAD
 /* Medium Screens (Laptops & Tablets) */
+=======
+>>>>>>> 27a2b6f (Updated portfolio with new features and bug fixes)
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
@@ -49,7 +61,10 @@
   }
 }
 
+<<<<<<< HEAD
 /* Tablets (Portrait & Landscape) */
+=======
+>>>>>>> 27a2b6f (Updated portfolio with new features and bug fixes)
 @media screen and (max-width: 992px) {
   #profile {
     height: auto;
@@ -70,6 +85,7 @@
   .experience-details-container {
     margin-top: 1rem;
   }
+<<<<<<< HEAD
   .nav-links {
     flex-direction: column;
     gap: 1rem;
@@ -77,6 +93,19 @@
 }
 
 /* Small Devices (Mobiles) */
+=======
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: clamp(1.75rem, 5vw, 2.25rem);
+  }
+  #contactForm {
+    padding: 1.25rem;
+  }
+}
+
+>>>>>>> 27a2b6f (Updated portfolio with new features and bug fixes)
 @media screen and (max-width: 600px) {
   #contact,
   footer {
@@ -120,6 +149,10 @@
   .section__pic-container {
     width: auto;
     height: 46vw;
+<<<<<<< HEAD
+=======
+    max-height: 280px;
+>>>>>>> 27a2b6f (Updated portfolio with new features and bug fixes)
     justify-content: center;
   }
   .section__text__p2 {
@@ -133,11 +166,18 @@
   }
 }
 
+<<<<<<< HEAD
 /* Extra Small Devices (Very Small Mobiles) */
 @media screen and (max-width: 480px) {
   .section__pic-container {
     width: 180px;
     height: 180px;
+=======
+@media screen and (max-width: 480px) {
+  .section__pic-container {
+    width: min(180px, 70vw);
+    height: min(180px, 70vw);
+>>>>>>> 27a2b6f (Updated portfolio with new features and bug fixes)
   }
   .title {
     font-size: 1.8rem;
@@ -161,3 +201,33 @@
     padding: 0 1rem;
   }
 }
+<<<<<<< HEAD
+=======
+
+@media screen and (max-width: 390px) {
+  section {
+    margin: 0 3%;
+  }
+  .btn {
+    width: 100%;
+    max-width: 14rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  section {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  section {
+    max-width: 1800px;
+  }
+  .title {
+    font-size: clamp(3rem, 2vw, 3.5rem);
+  }
+}
+>>>>>>> 27a2b6f (Updated portfolio with new features and bug fixes)
